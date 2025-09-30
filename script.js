@@ -176,19 +176,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('.contact-form');
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        
-        const submitBtn = form.querySelector('.submit-btn');
-        const ripple = submitBtn.querySelector('.ripple');
-        
-        ripple.style.animation = 'none';
-        setTimeout(() => {
-            ripple.style.animation = 'rippleEffect 0.6s ease-out';
-        }, 10);
-
-        setTimeout(() => {
-            alert('Thank you for your message! We will get back to you soon.');
-            form.reset();
-        }, 600);
     });
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
