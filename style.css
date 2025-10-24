@@ -857,6 +857,10 @@ section {
     font-size: 15px;
 }
 
+.info-item a {
+    color: var(--warm-gray);
+}
+
 
 @keyframes rippleEffect {
     to {
